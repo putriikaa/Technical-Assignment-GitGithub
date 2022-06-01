@@ -1,0 +1,53 @@
+GIT & GITHUB TECHNICAL ASSIGNMENT
+
+ANANDA KUSUMA P
+
+Answer the following questions
+
+1. What does git clean do?
+
+Perintah Git Clean digunakan untuk membersihkan / menghapus file yang tidak terlacak di repositori.
+    
+2. What do the -d and -f flags for git clean do?
+
+-f(force)
+Jika variabel konfigurasi Git clean.requireForce tidak disetel ke false, git clean akan menolak untuk menghapus file atau direktori kecuali 
+diberi -f atau -i. Git akan menolak untuk memodifikasi repositori git bersarang yang tidak terlacak (direktori dengan subdirektori .git) kecuali -f kedua diberikan.
+
+-d
+Biasanya, ketika tidak ada <path> yang ditentukan, git clean tidak akan muncul kembali ke direktori yang tidak terlacak untuk menghindari penghapusan 
+terlalu banyak. Tentukan -d untuk membuatnya berulang ke direktori seperti itu juga. Jika ada jalur yang ditentukan, -d tidak relevan; semua file yang 
+tidak terlacak yang cocok dengan jalur yang ditentukan (dengan pengecualian untuk direktori git bersarang yang disebutkan di bawah --force) akan dihapus.
+
+3. What git command creates a branch?
+
+git branch
+
+4. What is the difference between a fast-forward and recursive merge?
+
+Fast-forward : saat menggabungkan commit dalam satu branch, tidak ada penambahan commit baru pada main / master branch. Jadi saat commit tidak akan terjadi konflik
+Recursive merge : saat menggabungkan branch, git berulang di atas cabang dan membuat commit gabungan baru.
+
+5. What git command changes to another branch?
+
+git checkout branch
+
+6. How do you remove modified or deleted files from the working directory?
+
+Perintah git rm menghapus file dari direktori kerja sehingga tidak dapat dilihat sebagai file yang tidak terlacak di lain waktu / file terhapus.
+
+7. What git command deletes a branch?
+
+ git branch -d <branch>
+
+8. What does the git diff command do?
+
+Perintah Diff digunakan di git untuk melacak perbedaan antara perubahan yang dibuat pada file
+
+9. How do you remove files from the staging area?
+
+ git reset <nama file>
+
+10. How do merge conflicts happen?
+
+ketika Git tidak dapat secara otomatis menyelesaikan perbedaan kode antara dua komit.
